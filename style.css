@@ -7,5 +7,42 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100vh;
+    gap: 5vh;
+    border: 2px solid black;
+
+}
+.header{
+    height: 20vh;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+
+.playground{
+     height: 30vh;
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+     flex-direction: column;
+     border: 2px solid black;
+     width: 50vb;
+}
+
+.result{
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    width: 50vb;
+
+}
+.outcome{
+    height: 15vh;
+    border: 2px solid black ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
