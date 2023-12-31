@@ -10,6 +10,7 @@ body{
     height: 100vh;
     gap: 5vh;
     border: 2px solid black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
 .header{
@@ -17,7 +18,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid black;
+    
 }
 
 .playground{
@@ -26,8 +27,8 @@ body{
      align-items: center;
      justify-content: space-evenly;
      flex-direction: column;
-     border: 2px solid black;
-     width: 50vb;
+     
+     
 }
 
 .result{
@@ -36,12 +37,11 @@ body{
     align-items: center;
     justify-content: start;
     flex-direction: column;
-    width: 50vb;
+    
 
 }
 .outcome{
     height: 15vh;
-    border: 2px solid black ;
     display: flex;
     justify-content: center;
     align-items: center;
