@@ -24,6 +24,7 @@ function getComputerChoice() {
 
        const playerScore= document.querySelector('span.player');
        const compScore=document.querySelector('span.computer');
+       const outCome = document.querySelector('div.outcome');
 
 
  function game() {
@@ -68,6 +69,7 @@ function getComputerChoice() {
      }
      playerScore.textContent = player;
      compScore.textContent = comp;
+      
     return gameResult;
     
    
@@ -75,13 +77,7 @@ function getComputerChoice() {
 
 
 
-
-
-
-
-
-
-        console.log(game());
+  outCome.textContent = game();
         
       });
     });
