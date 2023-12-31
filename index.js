@@ -25,11 +25,11 @@ function getComputerChoice() {
        const playerScore= document.querySelector('span.player');
        const compScore=document.querySelector('span.computer');
        const outCome = document.querySelector('div.outcome');
-
+       let player = Number(playerScore.innerHTML);
+       let comp = Number(compScore.innerHTML);
 
  function game() {
-    let player = playerScore.innerHTML;
-    let comp = compScore.innerHTML;
+    
     let gameResult = playRound(playerSelection,computerSelection);
     function playRound(playerSelection, computerSelection) {
       if (playerSelection == computerSelection) {
@@ -70,14 +70,23 @@ function getComputerChoice() {
      playerScore.textContent = player;
      compScore.textContent = comp;
       
+     if(player+comp==5){
+      if(player>comp){
+      if(!alert('You Win!!!\nYour score: '+player+ '\nComputer Score: '+comp)){window.location.reload();}
+      }
+      else{
+        if(!alert('You Lose!!!\nYour score: '+player +'\nComputer Score: ' +comp)){window.location.reload();}
+      }
+     }else{
+
     return gameResult;
     
+     }
    
-  }
-
-
-
-  outCome.textContent = game();
-        
+    }
+      outCome.textContent = game()
       });
     });
+
+
+    
